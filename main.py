@@ -18,7 +18,7 @@ from matplotlib.offsetbox import OffsetImage, AnnotationBbox
 from scipy.interpolate import make_interp_spline
 from PIL import Image as ImageW
 
-@register("astrbot_plugin_get_weather_cmd", "whzc", "获取12小时的天气并生成一张图片", "1.0.0", "repo url")
+@register("astrbot_plugin_get_weather_cmd", "whzc", "获取12小时的天气并生成一张图片", "1.1.0", "repo url")
 
 class Main(Star):
     def __init__(self, context: Context, config: dict):
@@ -34,6 +34,7 @@ class Main(Star):
     async def get_weather(self, event: AstrMessageEvent, msg: str):
         msg = event.get_message_str()
         if not msg:
+            yield event.plain_result("请输入正确的指令，如“/天气 深圳”")
             return
         
         def get_weather_hourly(msg,max_terms: int = 12):
