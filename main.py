@@ -18,7 +18,7 @@ from matplotlib.offsetbox import OffsetImage, AnnotationBbox
 from scipy.interpolate import make_interp_spline
 from PIL import Image as ImageW
 
-@register("astrbot_plugin_get_weather_cmd", "whzc", "获取12小时的天气并生成一张图片", "1.1.0", "repo url")
+@register("astrbot_plugin_get_weather_cmd", "whzc", "获取12小时的天气并生成一张图片", "1.0.0", "repo url")
 
 class Main(Star):
     def __init__(self, context: Context, config: dict):
