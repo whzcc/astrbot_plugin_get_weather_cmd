@@ -202,7 +202,7 @@ class Main(Star):
 
             def load_weather_icon(text):
                 """加载天气图标并适配大小"""
-                icon_path = weather_icons.get(text, os.path.join(plugin_dir, "not_supported.png"))
+                icon_path = weather_icons.get(text, os.path.join(plugin_dir, plugin_dir ,"not_supported.png"))
                 img = plt.imread(icon_path)
                 return OffsetImage(img, zoom=0.2)  # 调整图标显示比例
 
