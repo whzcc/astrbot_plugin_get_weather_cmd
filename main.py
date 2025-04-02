@@ -33,7 +33,6 @@ class Main(Star):
     @filter.command("天气")
     async def get_weather(self, event: AstrMessageEvent, msg: str):
         msg = event.get_message_str()
-        logger.fatal("fuck")
         if not msg:
             return
         
