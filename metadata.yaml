@@ -1,5 +1,5 @@
 name: astrbot_plugin_get_weather_cmd
-desc: 通过简单的指令查询天气，获取12小时的天气并生成一张图片
+desc: 通过简单的指令查询天气：获取12小时的天气并生成一张图片
 help: 见Github页。
 version: v1.0.0
 author: whzc
