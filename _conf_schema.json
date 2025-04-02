@@ -1,0 +1,14 @@
+{
+    "qweather_api_key": {
+        "type": "string",
+        "description": "和风天气的 API KEY",
+        "hint": "需要在官网获取一个，和风天气控制台：https://console.qweather.com/home?lang=zh",
+        "default": ""
+    },
+    "history_access": {
+        "type": "bool",
+        "description": "是否让 AI 结合上下文判断地区名称",
+        "hint": "未完工，当前无效",
+        "default": false
+    }
+}
